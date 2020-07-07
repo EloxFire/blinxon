@@ -1,0 +1,22 @@
+@import "vars.scss";
+
+.navbar{
+  background-color: $blinxonRed !important;
+
+  a{
+    color: $white !important;
+    font-weight: 500;
+  }
+
+  .navbar-brand{
+    font-family: 'Osaka Chips' !important;
+  }
+
+  .navbar-toggler-icon{
+    color: $white;
+  }
+
+  .dropdown-item{
+    color: $black;
+  }
+}

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Osaka Chips';
+  src: url("../fonts/Osaka_Chips.ttf") format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&display=swap');
+
+$white: #FCFCFC;
+$black: #000000;
+$blinxonRed: #e64c3c;
+$blinxonBeige: #fff9b1;
+
+*{
+  font-family: Montserrat;
+}
+
+h1, h2, h3, h4, h5, h6, span{
+  font-family: Ubuntu;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+p{
+  font-size: 1.2em;
+}
