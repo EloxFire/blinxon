@@ -2,43 +2,74 @@ import React, { Component } from 'react';
 import '../sass/nav.scss';
 
 import blinxonLogo from '../img/LOGO-BLINXON.png';
+import burgerMenuIcon from '../img/burgerMenuIcon.svg'
+
+import Timer from "./sub/Timer";
 
 class Navbar extends Component{
   render(){
     return(
-      <nav className="navbar navbar-expand-lg navbar-dark">
-        <a className="navbar-brand" href="https://getbootstrap.com/docs/4.5/components/navbar/?">
-          <img src={blinxonLogo} width="30" height="30" className="d-inline-block align-top" alt="" loading="lazy"/>
-          Blinxon
-        </a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="https://getbootstrap.com/docs/4.5/components/navbar/?">Accueil <span className="sr-only">(current)</span></a>
+      <div className="navbarBody col-12 d-flex flex-column align-items-center sticky-top">
+        <div className="col-12 d-none d-xs-none d-sm-none d-md-flex d-lg-flex flex-row align-items-center">
+          <div className="col-5 d-flex justify-content-start">
+            <li className="nav-item">
+              <a className="nav-link" href="#">L'équipage</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="https://getbootstrap.com/docs/4.5/components/navbar/?">L'équipage</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="https://getbootstrap.com/docs/4.5/components/navbar/?">Le 4L Trophy</a>
+              <a className="nav-link" href="#">Le Raid</a>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="https://getbootstrap.com/docs/4.5/components/navbar/?" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Nous aider
               </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="https://getbootstrap.com/docs/4.5/components/navbar/?">Don en nature</a>
-                <a className="dropdown-item" href="https://getbootstrap.com/docs/4.5/components/navbar/?">Sponsoring</a>
-                <a className="dropdown-item" href="https://getbootstrap.com/docs/4.5/components/navbar/?">Don financier</a>
+              <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a className="dropdown-item" href="#">Sponsoring</a>
+                <a className="dropdown-item" href="#">Don financier</a>
+                <a className="dropdown-item" href="#">Don en nature</a>
               </div>
             </li>
-          </ul>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Nos réseaux</a>
+            </li>
+          </div>
+          <div className="col-2 d-flex justify-content-center align-items-center">
+            <img className="navbarLogo" src={blinxonLogo} alt="Blinxon's logo"/>
+          </div>
+          <div className="col-5 d-flex justify-content-end align-items-center">
+            <Timer/>
+          </div>
         </div>
-      </nav>
+
+        <div className="col-12 d-flex d-xs-flex d-sm-flex d-md-none d-lg-none flex-row">
+          <div className="dropdown col-12 ml-n4 d-flex align-items-center">
+            <img className="navbarLogo" src={blinxonLogo} alt="Blinxon's logo"/>
+            <button className="btn dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img className="navbarLogo" src={burgerMenuIcon} alt="Burger menu icon"/>
+            </button>
+            <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li className="nav-item">
+                <a className="nav-link" href="#">L'équipage</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Le Raid</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link disabled" href="#">Nous aider</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Sponsoring</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Don en nature</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Don financier</a>
+              </li>
+            </div>
+          </div>
+        </div>
+
+      </div>
     )
   }
 }

@@ -1,22 +1,41 @@
 @import "vars.scss";
 
-.navbar{
+.navbarBody{
+  width: 100%;
+  height: 6vh;
   background-color: $blinxonRed !important;
+  border-bottom: 2px solid $blinxonBeige;
 
-  a{
-    color: $white !important;
-    font-weight: 500;
-  }
-
-  .navbar-brand{
-    font-family: 'Osaka Chips' !important;
-  }
-
-  .navbar-toggler-icon{
+  .nav-link{
     color: $white;
+    font-family: "Osaka Chips";
+    font-size: 1.5em;
+  }
+
+  .navbarLogo{
+    max-height: 5vh;
   }
 
   .dropdown-item{
     color: $black;
   }
+
+  .dropdown-menu{
+    .nav-link{
+      color: $black;
+    }
+  }
+}
+
+.countdown-container{
+  color: $white;
+}
+
+.timer-text{
+  font-family: "Osaka Chips";
+  font-size: 1.5em;
+}
+
+.timer-span{
+  font-size: .8em;
 }
