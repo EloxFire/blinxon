@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Countdown from 'react-countdown-now';
 
+import '../../sass/sub/timer.scss';
+
 const Completionist = () => <span>L'aventure démarre !</span>;
 
 const renderer = ({ days, hours, minutes, seconds, completed }) => {
