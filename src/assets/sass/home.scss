@@ -1,0 +1,44 @@
+@import "vars.scss";
+
+#home{
+  height: 92vh;
+  background-color: $blinxonRed;*
+
+  .home-part-top{
+    height: 92vh;
+    width: 100%;
+    background-image: url("../img/blinxonBackground.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-right: .5px solid $blinxonBeige;
+  }
+
+  .home-part-bottom{
+    height: 92vh;
+    width: 100%;
+    border-left: .5px solid $blinxonBeige;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #home{
+    .home-part-top{
+      height: 46vh;
+      width: 100%;
+      background-image: url("../img/blinxonBackground.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-right: none;
+      border-bottom: .5px solid $blinxonBeige;
+    }
+
+    .home-part-bottom{
+      height: 46vh;
+      width: 100%;
+      border-left: none;
+      border-top: .5px solid $blinxonBeige;
+    }
+  }
+}
