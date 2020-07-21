@@ -1,0 +1,28 @@
+@import "../vars";
+
+.buttons{
+  background-color: $blinxonRed;
+  color: $blinxonBeige;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px;
+  font-size: 20px;
+  border: 2px solid $blinxonBeige;
+  border-radius: 20px;
+  transition: .3s;
+  width: 30vw;
+
+  &:hover{
+    background-color: $blinxonBeige;
+    color: $black;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .buttons{
+    width: 90vw;
+  }
+}

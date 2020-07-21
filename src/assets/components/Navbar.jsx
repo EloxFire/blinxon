@@ -35,7 +35,7 @@ class Navbar extends Component{
               <a className="nav-link" href="#nosreseaux">Nos réseaux</a>
             </li>
           </ul>
-          <Timer/>
+          <Timer font="1.5em" color="white"/>
         </div>
       </nav>
     )
