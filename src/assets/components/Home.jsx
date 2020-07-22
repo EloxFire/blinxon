@@ -27,10 +27,10 @@ class Home extends Component{
 
           <div className="h-25 row align-items-center mt-5">
             <div className="col-12 d-flex flex-column align-items-center justify-content-center">
-              <Button title="Qui sommes nous ?"/>
-              <Button title="Le 4L Trophy c'est quoi ?"/>
-              <Button title="Association 'Enfants du désert'"/>
-              <Button title="Comment nous aider ?"/>
+              <Button title="Qui sommes nous ?" to="/equipage"/>
+              <Button title="Le raid 4L Trophy" to="/raid"/>
+              <Button title="Association 'Enfants du désert'" to="/enfantsdudesert"/>
+              <Button title="Comment nous aider ?" to="/nousaider"/>
             </div>
           </div>
         </div>

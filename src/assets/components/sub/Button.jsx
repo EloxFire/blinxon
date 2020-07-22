@@ -3,11 +3,14 @@ import React from 'react';
 import '../../sass/sub/button.scss';
 
 interface ButtonProps {
-  title: String
+  title: String,
+  to: String
 }
-const Button:React.FC<ButtonProps> = ({title}) => (
+const Button:React.FC<ButtonProps> = ({title, to}) => (
   <div>
-    <button className="buttons m-2">{title}</button>
+    <a href={to}>
+      <button className="buttons m-2">{title}</button>
+    </a>
   </div>
 )
 

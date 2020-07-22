@@ -20,19 +20,22 @@ class Navbar extends Component{
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
             <li className="nav-item mr-2">
-              <a className="nav-link" href="#equipage">L'équipage <span className="sr-only">(current)</span></a>
+              <a className="nav-link" href="/home">Accueil</a>
             </li>
             <li className="nav-item mr-2">
-              <a className="nav-link" href="#raid">Le raid</a>
+              <a className="nav-link" href="/equipage">L'équipage</a>
             </li>
             <li className="nav-item mr-2">
-              <a className="nav-link" href="#enfantsdudesert">Enfants du désert</a>
+              <a className="nav-link" href="/raid">Le raid</a>
             </li>
             <li className="nav-item mr-2">
-              <a className="nav-link" href="#nousaider">Nous aider</a>
+              <a className="nav-link" href="/enfantsdudesert">Enfants du désert</a>
             </li>
             <li className="nav-item mr-2">
-              <a className="nav-link" href="#nosreseaux">Nos réseaux</a>
+              <a className="nav-link" href="/nousaider">Nous aider</a>
+            </li>
+            <li className="nav-item mr-2">
+              <a className="nav-link" href="/nosreseaux">Nos réseaux</a>
             </li>
           </ul>
           <Timer font="1.5em" color="white"/>
