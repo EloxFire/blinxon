@@ -13,7 +13,7 @@ class Navbar extends Component{
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <a className="navbar-brand" href="#home">
+        <a className="navbar-brand" href="/home">
           <img src={blinxonLogo} width="50" height="50" className="d-inline-block align-top" alt="Blinxon's Logo"/>
         </a>
 

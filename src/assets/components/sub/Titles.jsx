@@ -2,10 +2,20 @@ import React from 'react';
 import '../../sass/sub/titles.scss';
 
 function Titles(props){
+  const titleStyleCard = {
+    maxHeight: '7vh',
+  }
+
+  const titleStyleText = {
+    textTransform: 'uppercase',
+    fontFamily: "Osaka Chips",
+    fontSize: ''
+  }
+
   return(
-    <div className="col-12 mt-5">
-      <div className="col-7 col-xs-7 col-sm-7 col-md-7 col-lg-2 title-box text-center pt-1">
-        <h1 className="title">{props.title}</h1>
+    <div className="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 d-flex flex-row justify-content-center">
+      <div style={titleStyleCard} className="card p-2">
+        <p style={titleStyleText}>{props.title}</p>
       </div>
     </div>
   )
