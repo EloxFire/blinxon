@@ -17,12 +17,14 @@ function App() {
           <Route path="/" exact component={props =>
             <div>
               <Home/>
+              <Crew/>
             </div>
           }/>
 
           <Route path="/home" component={props =>
             <div>
               <Home/>
+              <Crew/>
             </div>
           }/>
 
