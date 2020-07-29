@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Navbar from './assets/components/Navbar';
 import Home from './assets/components/Home';
 import Crew from './assets/components/Crew';
+import Raid from './assets/components/Raid';
 
 function App() {
   return(
@@ -18,6 +19,7 @@ function App() {
             <div>
               <Home/>
               <Crew/>
+              <Raid/>
             </div>
           }/>
 
@@ -25,6 +27,7 @@ function App() {
             <div>
               <Home/>
               <Crew/>
+              <Raid/>
             </div>
           }/>
 
