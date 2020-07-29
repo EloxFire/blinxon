@@ -12,7 +12,7 @@ function PhotoCard(props){
       borderRadius: '8px 0px 0px 8px',
       width: "100%",
       height: '100%',
-      WebkitClipPath: "polygon(0 0, 100% 0, 75% 100%, 0% 100)",
+      WebkitClipPath: "polygon(0 0, 100% 0, 75% 100%, 0% 100%)",
       clipPath: "polygon(0 0, 100% 0, 75% 100%, 0% 100%)",
     }
   }
@@ -43,7 +43,7 @@ function PhotoCard(props){
   }
 
   return(
-    <div  className="pres-card col-12 col-xs-12 col-sm-12 col-md-12 col-lg-5 m-2 d-flex flex-column flex-xs-column flex-sm-column flex-md-row flex-lg-row p-0">
+    <div  className="pres-card col-12 col-xs-12 col-sm-12 col-md-12 col-lg-5 m-3 d-flex flex-column flex-xs-column flex-sm-column flex-md-row flex-lg-row p-0">
       <div style={photoCardStyle().photoCard}></div>
       <div className="m-1">
         <div>
