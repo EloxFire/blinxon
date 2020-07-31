@@ -21,7 +21,7 @@ class Home extends Component{
 
             <div className="d-none d-xs-none d-sm-none d-md-none d-lg-flex flex-column justify-content-center align-items-center text-center">
               <h4 className="beige osaka">Départ du 4L Trophy 2021 dans :</h4>
-              <Timer font="4em" color="black"/>
+              <Timer font="4em" color="white"/>
             </div>
           </div>
 
