@@ -37,7 +37,7 @@ function PhotoCard(props){
     photoCard: {
       borderRadius: "10px",
       border: "solid 3px #e64c3c",
-      height: "75vh",
+      height: "70vh",
     },
 
     imageCard: {
@@ -53,7 +53,7 @@ function PhotoCard(props){
     },
 
     textCard: {
-      maxHeight: "75%",
+      maxHeight: "60%",
     },
 
     titleCard: {
@@ -77,20 +77,25 @@ function PhotoCard(props){
       <div style={photoCardStyle().imageCard}></div>
       <div style={photoCardStyle().textCard}>
         <div className="headerCard col-12">
-          <h1 style={photoCardStyle().titleCard}>{props.title}</h1>
-          <p style={photoCardStyle().subtitleCard}>{props.subtitle}</p>
+          <h1 style={photoCardStyle().titleCard} className="m-0 p-0">{props.title}</h1>
+          <p style={photoCardStyle().subtitleCard}><span className="m-0 p-0">{props.subtitle}</span></p>
+          <hr className="m-1" style={{width:"60%"}}/>
         </div>
         <div style={{maxHeight:"50%", overflow:"auto"}}>
           <p className="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit laborum aperiam similique nulla, repellat cum sequi nihil id officiis quas nobis eos voluptates. Non expedita commodi modi, vel vero eius.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit laborum aperiam similique nulla, repellat cum sequi nihil id officiis quas nobis eos voluptates. Non expedita commodi modi, vel vero eius.</p>
         </div>
         <hr className="mt-3" style={{width:"60%"}}/>
-        <div className="footerCard d-flex flex-column flex-xs-column flex-sm-column flex-md-column flex-lg-row justify-content-center align-items-center">
-          <div>
-            <p>hioihy</p>
-          </div>
-          <div>
-            <p><span>ehcgiu</span></p>
-          </div>
+      </div>
+      <div className="footerCard d-flex flex-column justify-content-center align-items-center">
+        <h6>Quelques informations :</h6>
+        <div className="d-flex flex-wrap justify-content-center">
+          {props.age == null ? null : <li className="m-1"><span>Âge : </span>{props.age} ans</li>}
+          {props.town == null ? null : <li className="m-1"><span>Ville : </span>{props.town}</li>}
+          {props.hobbies == null ? null : <li className="m-1"><span>Passions : </span>{props.hobbies}</li>}
+          {props.year == null ? null : <li className="m-1"><span>Mise en circulation : </span>Juillet 1989</li>}
+          {props.horsepower == null ? null : <li className="m-1"><span>Puissance : </span>34ch</li>}
+          {props.motor == null ? null : <li className="m-1"><span>Motorisation : </span>Moteur Cléon 956cm³</li>}
+          {props.weight == null ? null : <li className="m-1"><span>Poids : </span>695Kg, une légèreté inégalé !</li>}
         </div>
       </div>
     </div>
