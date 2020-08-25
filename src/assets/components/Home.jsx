@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../sass/home.scss';
+import '../sass/styles.scss';
 
 import Timer from './sub/Timer';
 import Button from './sub/Button';

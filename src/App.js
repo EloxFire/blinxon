@@ -5,14 +5,16 @@ import Navbar from './assets/components/Navbar';
 import Home from './assets/components/Home';
 import Crew from './assets/components/Crew';
 import Raid from './assets/components/Raid';
+import Edd from './assets/components/Edd';
+import Help from './assets/components/Help';
+import Social from './assets/components/Social';
+import Footer from './assets/components/Footer';
 
 function App() {
   return(
     <Router>
       <div>
-        {/*Alaways on top*/}
         <Navbar/>
-
         {/*In routes*/}
         <Switch>
           <Route path="/" exact component={props =>
@@ -20,6 +22,9 @@ function App() {
               <Home/>
               <Crew/>
               <Raid/>
+              <Edd/>
+              <Help/>
+              <Social/>
             </div>
           }/>
 
@@ -28,32 +33,13 @@ function App() {
               <Home/>
               <Crew/>
               <Raid/>
-            </div>
-          }/>
-
-          <Route path="/equipage" component={props =>
-            <div>
-              <Crew/>
-            </div>
-          }/>
-
-          <Route path="/raid" component={props =>
-            <div>
-            </div>
-          }/>
-
-          <Route path="/enfantsdudesert" component={props =>
-            <div>
-            </div>
-          }/>
-
-          <Route path="/nousaider" component={props =>
-            <div>
+              <Edd/>
+              <Help/>
+              <Social/>
             </div>
           }/>
         </Switch>
-
-        {/*Alaways on bottom*/}
+        <Footer/>
       </div>
     </Router>
   )
